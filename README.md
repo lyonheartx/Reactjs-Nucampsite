@@ -1,6 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-A live Demo of the website can be found hosted at: 
-h1 trying h1
+<h1> A live Demo of the website can be found hosted at: </h1>
+
 ## Available Scripts
 
 In the project directory, you can run:
