@@ -78,6 +78,7 @@ class Main extends Component {
         <Header />
         <TransitionGroup>
             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+<<<<<<< HEAD
             <Router basename={'/'}>
                 <Switch>
                     <Route path={`${process.env.PUBLIC_URL}/`} component={HomePage} />
@@ -89,6 +90,17 @@ class Main extends Component {
                     <Redirect to='/home' />
                 </Switch>
                 </Router>
+=======
+                <Switch>
+                    <Route path='/home' component={HomePage} />
+                    <Route exact path='/directory' render={() => <Directory campsites={this.props.campsites} />} />
+                    <Route path='/directory/:campsiteId' component={CampsiteWithId} />
+                    <Route exact path='/contactus' render={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} 
+                     postFeedback={this.props.postFeedback}/> } />
+                    <Route exact path='/aboutus' render={() => <About partners={this.props.partners} /> } />
+                    <Redirect to='/home' />
+                </Switch>
+>>>>>>> 54e05aafaca637e072ea170e870754b38bdcfb73
             </CSSTransition>
         </TransitionGroup>
         <Footer />
